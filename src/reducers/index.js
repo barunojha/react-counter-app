@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import counterReducer from './counter'; 
+import counterReducer from './counter';
+import cakeStockReducer from './cakeStock';
 
-const count = combineReducers({
-    counter: counterReducer //returns value of reducer function as object
+const allReducers = combineReducers({
+    counter: counterReducer, //returns value of reducer function as object
+    cakeCounter: cakeStockReducer,
 })
 
-export { count };
+export { allReducers };

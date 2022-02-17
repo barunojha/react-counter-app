@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
-import { count } from './reducers';
+import { allReducers } from './reducers';
 import { Provider } from 'react-redux';
 
-const store = createStore(count, window.__REDUX_DEVTOOLS_EXTENSION__ &&
+const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ &&
   window.__REDUX_DEVTOOLS_EXTENSION__()); //store created for storing state values
 
 ReactDOM.render(

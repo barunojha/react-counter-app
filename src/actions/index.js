@@ -13,3 +13,11 @@ export const decrement = (() => {
         payload: 1,
     }
 })
+
+//CAKE BOUGHT
+export const cakeCount = ((value) => {
+      return{
+        type: "BUY_CAKE",
+        payload: value.payload,
+    }
+})
